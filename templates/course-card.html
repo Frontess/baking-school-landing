@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка курса</title>
+    <link rel="stylesheet" href="styles/course-card.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Карточка курса -->
+      <div class="course-card" onclick="openPopup('course-details')">
+        <img
+          src="images/course-image.jpg"
+          alt="Изображение курса"
+          class="course-image"
+        />
+        <h2>Название курса</h2>
+        <p>Краткое описание курса...</p>
+        <button>Подробнее</button>
+      </div>
+
+      <!-- Попап с подробным описанием курса -->
+      <div id="course-details" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup('course-details')"
+            >&times;</span
+          >
+          <h2>Название курса</h2>
+          <img
+            src="images/course-image.jpg"
+            alt="Изображение курса"
+            class="popup-image"
+          />
+          <p>
+            Подробное описание курса: изучите шаги по созданию десертов, секреты
+            шоколадных украшений и многое другое. Курс включает видеоматериалы и
+            практические задания.
+          </p>
+          <button onclick="closePopup('course-details')">Закрыть</button>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/course-popup.js"></script>
+  </body>
+</html>

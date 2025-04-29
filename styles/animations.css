@@ -1,0 +1,17 @@
+.cta-button:hover {
+  background-color: #388e3c;
+  transition: background-color 0.3s;
+}
+
+.testimonial-slider {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

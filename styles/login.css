@@ -1,0 +1,118 @@
+/* Основной стиль для body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5a623, #f7f7f7);
+  margin: 0;
+}
+
+/* Header для кнопки "Назад на главную" */
+header {
+  display: flex;
+  padding: 15px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f5a623;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #d4881e;
+  transform: scale(1.05);
+}
+
+/* Контейнер для авторизации */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Стиль для формы */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Универсальный стиль кнопок */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #8b4513; /* Шоколадный цвет */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d2691e; /* Карамельный цвет при наведении */
+  transform: scale(1.05);
+}
+
+/* Стиль для ссылок-кнопок (например, "Назад на главную") */
+.back-button,
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b4513; /* Шоколадный цвет */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover,
+.cta-button:hover {
+  background-color: #d2691e; /* Карамельный цвет при наведении */
+  transform: scale(1.05);
+}
+
+/* Адаптивность для небольших экранов */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+}

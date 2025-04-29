@@ -1,0 +1,423 @@
+/* Основной стиль для body */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f5a623, #f7f7f7);
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #8b4513;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: #d2691e;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 15px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8b4513;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #d2691e !important;
+  transform: scale(1.05);
+}
+
+/* Sections */
+section {
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Testimonials */
+/* .swiper-slide {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+} */
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #d2691e;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #ddd;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer .social-icons img {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #f5a623;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#scrollToTop:hover {
+  background-color: #d4881e;
+  transform: scale(1.2);
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.course-card h3 {
+  color: #8b4513;
+  font-size: 1.2rem;
+}
+
+.course-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Слайдер */
+
+/* Контейнер Swiper */
+.swiper {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 60px; /* Пространство для точек */
+}
+
+/* Слайд */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 10; /* Увеличенный z-index */
+}
+
+/* Пагинация */
+.swiper-pagination {
+  position: absolute;
+  bottom: -60px; /* Расположение ниже слайдов */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 5; /* Точки ниже слайдов */
+}
+
+.swiper-pagination-bullet {
+  background-color: #8b4513;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d2691e;
+}
+
+/* Карточка курса */
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Попап */
+/* Всплывающее окно */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.popup-image {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.popup.active {
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #d2691e;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  #hero h2 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  form input {
+    max-width: 250px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  #hero h2 {
+    font-size: 1.4rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  form input {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн-школа выпечки</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Добро пожаловать в Онлайн-школу выпечки</h1>
+      <nav>
+        <a href="#about">О нас</a>
+        <a href="#courses">Курсы</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="login.html">Войти</a>
+        <a href="register.html">Регистрация</a>
+        <!-- Ссылка на страницу авторизации -->
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Освойте искусство выпечки</h2>
+        <p>Учитесь у лучших кондитеров и улучшайте свои навыки.</p>
+        <a href="#courses" class="cta-button">Просмотреть курсы</a>
+        <div id="particle-background"></div>
+      </section>
+      <section id="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем онлайн-курсы выпечки для новичков и профессионалов.</p>
+      </section>
+      <section id="courses">
+        <h2>Наши курсы</h2>
+        <div class="course-list" id="courseList">
+          <!-- Handlebars.js шаблоны для карточек курсов -->
+          <!-- Шаблон для курсов -->
+          <script id="course-template" type="text/x-handlebars-template">
+            {{#each courses}}
+              <div class="course-card" data-id="{{id}}">
+                <!-- Делаем изображение кликабельным -->
+                <img
+                  src="{{image}}"
+                  alt="{{title}}"
+                  class="course-image"
+                  data-id="{{id}}"
+                />
+
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+                <p><strong>Цена:</strong> {{price}}</p>
+                <button class="open-popup" data-id="{{id}}">Подробнее</button>
+              </div>
+
+              <!-- Всплывающее окно для курса -->
+              <div id="popup-{{id}}" class="popup">
+                <div class="popup-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>{{title}}</h2>
+                  <img src="{{image}}" alt="{{title}}" class="popup-image" />
+                  <p>{{longDescription}}</p>
+                  <button onclick="closePopup('popup-{{id}}')">Закрыть</button>
+                </div>
+              </div>
+            {{/each}}
+          </script>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>Что говорят наши ученики</h2>
+        <div class="swiper testimonial-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Отличный опыт! - Иван Иванов</div>
+            <div class="swiper-slide">
+              Понравился курс по шоколаду! - Мария Смирнова
+            </div>
+            <div class="swiper-slide">
+              Понравилась практика в реальном времени! - Дмитрий Петров
+            </div>
+            <div class="swiper-slide">
+              Спасибо! Было вкусно и полезно - Света Королева
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Связаться с нами</h2>
+        <form>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Электронная почта:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Онлайн-школа выпечки. Все права защищены.</p>
+      <div class="social-icons">
+        <img src="images/icons/facebook.png" alt="Facebook" />
+        <img src="images/icons/instagram.png" alt="Instagram" />
+        <img src="images/icons/twitter.png" alt="Twitter" />
+      </div>
+      <button id="scrollToTop">↑</button>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/courses.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+
+    <script src="scripts/slider.js"></script>
+  </body>
+</html>
