@@ -39,7 +39,7 @@ HTML | CSS | JavaScript (ES6+) | Handlebars.js – шаблонизация дл
 Склонируйте репозиторий:
 
 ```bash
-git clone
+git clone https://github.com/Frontess/bacing-school-landing.git
 ```
 
 Откройте index.html в браузере.
